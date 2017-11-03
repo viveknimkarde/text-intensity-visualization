@@ -22,7 +22,9 @@ body {
     color: white;
     cursor: pointer;
 }
-
+span{
+    font-size: 18px;
+}
 .invalid-input {
     display: none;
     color: red;

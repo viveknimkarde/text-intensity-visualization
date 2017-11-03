@@ -9,11 +9,12 @@ $(document).ready(function(){
         doc.innerHTML = "";
         myFunction()
     });
+    
 });
 function myFunction() {
     var doc = document.getElementById('output');
     var input  = JSON.parse(document.getElementById('response').value);
-    var create_text_line = function(word_intensity,word,sentence_intensity,index){
+    var create_text_line = function(word_intensity,word,sentence_intensity){
         var words = '<div class="words">';
         var sentence = '<div class="sentence"><span class="sentence-card" style="background-color:hsl(0, 0%, '+(94-60*sentence_intensity)+'%);">'+sentence_intensity+'</span></div>';
         for(var j = 0 ; j < word_intensity.length; j++){
@@ -23,7 +24,6 @@ function myFunction() {
         }
         words = words+'</div>';
         return '<div class="paragraph">'+sentence+words+'</div>';
-
     }
     for(var i = 0; i < input.sentence_weights.length ; i ++){
         var division = document.createElement('div');
