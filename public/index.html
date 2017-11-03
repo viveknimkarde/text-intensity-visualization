@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Attention Visualization demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div id="app">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="deepaffects.png" width="150" height="30"/></a>
+        <ul class="nav justify-content-end nav-link">
+            <li class="nav-item">
+                <a class="nav-link active" href="https://github.com" style="color: #EEEEEE">Learn More</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-12" style="text-align: center;padding: 50px">
+                <p class="font-weight-bold">Attention Intensity Model</p>
+                <form id="myForm">
+
+                    Enter response JSON:<br /><textarea style="width: 100%" rows="4"  id="response">
+
+                    </textarea>
+                    <br />
+                    <button type="submit" class="btn btn-info" style="margin: 50px">Submit</button>
+                </form>
+                <div id="output">
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    <!--<footer class="footer">-->
+         <!--<span>-->
+                    <!--<strong>©</strong>-->
+                    <!--2017 SeerNet Technologies-->
+                    <!--<a target="_blank"  href="https://www.deepaffects.com/privacy-policy">Privacy Policy</a>&nbsp;&amp;-->
+                    <!--<a target="_blank"  href="https://www.deepaffects.com/s/DeepAffects-Data-Security-and-Privacy-Statement.pdf">Data Security Statement</a>-->
+         <!--</span>-->
+    <!--</footer>-->
+</div>
+</body>
+</html>
